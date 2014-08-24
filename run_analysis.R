@@ -135,11 +135,11 @@ for (n in 1:length(cnames)) {
 ## Write out the code book for this project
 sink("DataScienceCourse3Project1/CodeBook.md")
         for (n in 1:length(cnames)) {
-                cat(paste("Variable Name: ", vname[n], "; \n"))
-                cat(paste("Column: ", n, "; \n"))
-                cat(paste("Field Width: ", vwidth[n], "; \n"))
-                cat(paste("Definition: ", vdef[n], "; \n"))
-                cat(paste("Range: ", vrange[n], "; \n"))
+                cat(paste("Variable Name:", vname[n], "; \n"))
+                cat(paste("Column:", n, "; \n"))
+                cat(paste("Field Width:", vwidth[n], "; \n"))
+                cat(paste("Definition:", vdef[n], "; \n"))
+                cat(paste("Range:", vrange[n], "; \n"))
                 cat("\r\n")
         }
 sink()
