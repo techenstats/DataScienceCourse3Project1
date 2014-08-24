@@ -135,11 +135,11 @@ for (n in 1:length(cnames)) {
 ## Write out the code book for this project
 sink("DataScienceCourse3Project1/CodeBook.md")
         for (n in 1:length(cnames)) {
-                cat(paste("Variable Name: ", vname[n], "\n"))
-                cat(paste("Column: ", n, "\n"))
-                cat(paste("Field Width: ", vwidth[n], "\n"))
-                cat(paste("Definition: ", vdef[n], "\n"))
-                cat(paste("Range: ", vrange[n], "\n"))
+                cat(paste("*Variable Name: ", vname[n], "\n"))
+                cat(paste("*Column: ", n, "\n"))
+                cat(paste("*Field Width: ", vwidth[n], "\n"))
+                cat(paste("*Definition: ", vdef[n], "\n"))
+                cat(paste("*Range: ", vrange[n], "\n"))
                 cat("\r\n")
         }
 sink()
@@ -152,7 +152,7 @@ sink("DataScienceCourse3Project1/README.md")
         cat("Project: download the data set \"getdata_projectfiles_UCI HAR Dataset.zip\" from the Coursera
 website.  The link to download the data is the following:
 
-     https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+     Link to Original Data Set (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
 This data set contains triaxial accelerometer and gyroscope measurements recorded from a
 Samsung Galaxy S II smartphone.  Various metrics are recorded for this data set, as described in
@@ -169,13 +169,13 @@ The goal of the project is to do the following:
    5. Creates a tidy data set with the average of each variable for each combination of activity and subject.\n\n")
 
         cat("The original data files used are described as follows:
-            UCI HAR Dataset/train/X_train.txt = Training subject measurements
-            UCI HAR Dataset/train/Y_train.txt = Training subject activities
-            UCI HAR Dataset/train/subject_train.txt = Training subject ID's (1 to 30)
-            UCI HAR Dataset/test/X_test.txt = Test subject measurements
-            UCI HAR Dataset/test/Y_test.txt = Test subject activities
-            UCI HAR Dataset/test/subject_test.txt = Test subject ID's (1 to 30)
-            UCI HAR Dataset/features.txt = The measurements recorded (561 measurements in total) \n\n")
+            * UCI HAR Dataset/train/X_train.txt = Training subject measurements
+            * UCI HAR Dataset/train/Y_train.txt = Training subject activities
+            * UCI HAR Dataset/train/subject_train.txt = Training subject ID's (1 to 30)
+            * UCI HAR Dataset/test/X_test.txt = Test subject measurements
+            * UCI HAR Dataset/test/Y_test.txt = Test subject activities
+            * UCI HAR Dataset/test/subject_test.txt = Test subject ID's (1 to 30)
+            * UCI HAR Dataset/features.txt = The measurements recorded (561 measurements in total) \n\n")
 
 
         cat("After binding the subject and activity columns, the test and and training data asets are merged
